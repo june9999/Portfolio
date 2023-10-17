@@ -17,7 +17,7 @@ const FeaturedProject = ({
   return (
     <article className="flex mx-auto border-dark border rounded-3xl border-solid shadow-2xl">
       <Link
-        href="./Wenjun_CV.pdf"
+        href="./CV.pdf"
         target="_blank"
         className="flex justify-center items-center w-1/2 rounded-lg overflow-hiddedn cursor-pointer h-auto m-[2rem]"
       >
@@ -25,19 +25,16 @@ const FeaturedProject = ({
       </Link>
       <div className="flex w-1/2 flex-col items-start justify-center  px-6 text-primary">
         <span className="font-medium text-xl mb-10 capitalize">{type}</span>
-        <Link
-          href="./Wenjun_CV.pdf"
-          className="hover:underline underline-offset-2"
-        >
+        <Link href="./CV.pdf" className="hover:underline underline-offset-2">
           <h2 className="w-full my-2 text-4xl font-bold">{title}</h2>
         </Link>
         <p className="mt-2 font-medium text-dark">{description}</p>
         <div className="flex gap-[1rem] pt-[1rem] items-center">
-          <Link href="./Wenjun_CV.pdf" target="_blank">
+          <Link href="./CV.pdf" target="_blank">
             <GithubIcon className={"w-[30px]"} />
           </Link>
           <Link
-            href="./Wenjun_CV.pdf"
+            href="./CV.pdf"
             target="_blank"
             className="flex items-center font-semibold bg-dark text-light rounded-lg p-2 "
           >
@@ -53,7 +50,7 @@ const Project = ({ type, title, description, img, link, githublink }) => {
   return (
     <article className="flex flex-col justify w-[45%]  mx-auto border-dark border rounded-3xl border-solid shadow-2xl">
       <Link
-        href="./Wenjun_CV.pdf"
+        href="./CV.pdf"
         target="_blank"
         className="flex justify-center items-center rounded-lg overflow-hiddedn cursor-pointer h-auto mx-[2rem] mt-[2rem]"
       >
@@ -64,15 +61,12 @@ const Project = ({ type, title, description, img, link, githublink }) => {
           <span className="font-medium text-xl">{type}</span>
 
           <div className="flex justify-around items-center">
-            <Link href="./Wenjun_CV.pdf" target="_blank">
+            <Link href="./CV.pdf" target="_blank">
               <GithubIcon className={"w-[20px]"} />
             </Link>
           </div>
         </div>
-        <Link
-          href="./Wenjun_CV.pdf"
-          className="hover:underline underline-offset-2"
-        >
+        <Link href="./CV.pdf" className="hover:underline underline-offset-2">
           <h2 className="w-full my-2 text-2xl font-bold">{title}</h2>
         </Link>
       </div>

@@ -24,12 +24,13 @@ export default function Home() {
               text={"turn complexity into clean and sustainable code"}
             />
           </div>
-          <p className="mt-20 mb-10 font-medium text-base text-primary">
-            As a motivated and ambitious junior software engineer/full-stack web
-            developer, I am dedicated to producing clean, sustainable code. As I
-            continue on my ongoing professional development journey, I am ready
-            to maximize my technological expertise and eagerly embrace new
-            challenges.
+          <p className="mt-10 font-medium text-base text-primary">
+            Welcome to my personal Site.
+          </p>
+          <p className="mt-10 mb-10 font-medium text-base text-primary">
+            My name is Wenjun. As a motivated and ambitious junior software
+            engineer/full-stack web developer, I am dedicated to producing
+            clean, sustainable code.
           </p>
           <div className="text-light flex gap-[1rem]">
             <Link
