@@ -49,8 +49,8 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="w-1/2 ml-[5rem]">
-          <ProImg />
+        <div className="w-1/2 ">
+          <ProImg className="" />
         </div>
       </div>
     </>

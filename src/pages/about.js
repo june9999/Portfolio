@@ -17,7 +17,7 @@ const about = () => {
           <div className="grid grid-cols-8 w-full p-8">
             <section className="col-span-3 flex flex-col ">
               <h2 className="text-dark/75  uppercase mt-[4rem] text-lg  font-bold ">
-                Biography
+                The Will from within
               </h2>
               <p className="font-medium w-[90%]">
                 Hi, I am Wenjun. I am a junior software developer. With a robust
