@@ -28,7 +28,7 @@ const NavButton = ({ href, text, className = "" }) => {
 export const Navbar = () => {
   // what I want to do is to create a function to include all link
   return (
-    <div className="flex justify-between mx-[3rem] mt-[1rem] py-[1rem] ">
+    <div className="flex justify-between mx-[3rem] mt-[1rem] py-[1rem] border-b-2">
       <nav className="flex text-primary text-lg font-medium">
         <NavButton href="/" text="Home" />
         <NavButton href="/about" className="mx-4" text="About" />

@@ -17,14 +17,14 @@ export default function Home() {
         <meta name="description" content="the index page" />
       </Head>
       <div className="w-full flex">
-        <div className="w-1/2 flex flex-col mt-[10rem] pl-[6rem] overflow-hidden">
+        <div className="w-1/2 flex flex-col mt-[7rem] pl-[6rem] overflow-hidden">
           <div>
             <AnimatedText
               className="!text-6xl "
               text={"turn complexity into clean and sustainable code"}
             />
           </div>
-          <p className="my-4 font-medium text-base text-primary">
+          <p className="mt-20 mb-10 font-medium text-base text-primary">
             As a motivated and ambitious junior software engineer/full-stack web
             developer, I am dedicated to producing clean, sustainable code. As I
             continue on my ongoing professional development journey, I am ready
@@ -34,7 +34,7 @@ export default function Home() {
           <div className="text-light flex gap-[1rem]">
             <Link
               target={"_blank"}
-              href="./Wenjun_CV.pdf"
+              href="./CV.pdf"
               className="flex p-2.5 px-6 bg-dark rounded-lg text-lg font-semibold hover:bg-light hover:text-dark"
               download={true}
             >

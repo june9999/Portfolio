@@ -119,33 +119,6 @@ const Projects = () => {
             githublink="https://github.com/june9999/Portfolio"
             title="Delivery App"
           />
-          <FeaturedProject
-            type={"web App"}
-            img={project1}
-            description="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-              It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-              local currency."
-            githublink="https://github.com/june9999/Portfolio"
-            title="Delivery App"
-          />
-          <Project
-            type={"web App"}
-            img={project1}
-            description="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-              It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-              local currency."
-            githublink="https://github.com/june9999/Portfolio"
-            title="Delivery App"
-          />
-          <Project
-            type={"web App"}
-            img={project1}
-            description="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-              It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-              local currency."
-            githublink="https://github.com/june9999/Portfolio"
-            title="Delivery App"
-          />
         </div>
       </main>
     </>
