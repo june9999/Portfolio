@@ -103,14 +103,15 @@ export default function Home() {
                 I am Wenjun, a junior software developer.
               </p>
               <p className="font-medium my-[3rem] w-[90%]">
-                Here, you'll find the culmination of my passion for technology,
-                where every application, website, or software solution is a
-                testament to the unwavering dedication that springs from within.
+                Here, you&aposll find the culmination of my passion for
+                technology, where every application, website, or software
+                solution is a testament to the unwavering dedication that
+                springs from within.
               </p>
               <p className="font-medium mb-[3rem] w-[90%]">
                 If you have any questions, ideas that you are possionate about,
-                or just want to connect, don't hesitate to reach out. I'm always
-                open to collaboration.
+                or just want to connect, don&apost hesitate to reach out.
+                I&aposm always open to collaboration.
               </p>
             </section>
             <section className="col-span-3 relative rounded-2xl ">
