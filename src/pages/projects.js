@@ -4,7 +4,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import project1 from "../../public/images/projects/project1.jpg";
+import project1 from "../../public/images/projects/project1.png";
 
 const FeaturedProject = ({
   type,
@@ -17,7 +17,7 @@ const FeaturedProject = ({
   return (
     <article className="flex mx-auto border-dark border rounded-3xl border-solid shadow-2xl">
       <Link
-        href="./CV.pdf"
+        href={link}
         target="_blank"
         className="flex justify-center items-center w-1/2 rounded-lg overflow-hiddedn cursor-pointer h-auto m-[2rem]"
       >
@@ -25,16 +25,14 @@ const FeaturedProject = ({
       </Link>
       <div className="flex w-1/2 flex-col items-start justify-center  px-6 text-primary">
         <span className="font-medium text-xl mb-10 capitalize">{type}</span>
-        <Link href="./CV.pdf" className="hover:underline underline-offset-2">
-          <h2 className="w-full my-2 text-4xl font-bold">{title}</h2>
-        </Link>
+        <h2 className="w-full my-2 text-4xl font-bold">{title}</h2>
         <p className="mt-2 font-medium text-dark">{description}</p>
         <div className="flex gap-[1rem] pt-[1rem] items-center">
-          <Link href="./CV.pdf" target="_blank">
+          <Link href={githublink} target="_blank">
             <GithubIcon className={"w-[30px]"} />
           </Link>
           <Link
-            href="./CV.pdf"
+            href={link}
             target="_blank"
             className="flex items-center font-semibold bg-dark text-light rounded-lg p-2 "
           >
@@ -50,7 +48,7 @@ const Project = ({ type, title, description, img, link, githublink }) => {
   return (
     <article className="flex flex-col justify w-[45%]  mx-auto border-dark border rounded-3xl border-solid shadow-2xl">
       <Link
-        href="./CV.pdf"
+        href={link}
         target="_blank"
         className="flex justify-center items-center rounded-lg overflow-hiddedn cursor-pointer h-auto mx-[2rem] mt-[2rem]"
       >
@@ -61,12 +59,12 @@ const Project = ({ type, title, description, img, link, githublink }) => {
           <span className="font-medium text-xl">{type}</span>
 
           <div className="flex justify-around items-center">
-            <Link href="./CV.pdf" target="_blank">
+            <Link href={githublink} target="_blank">
               <GithubIcon className={"w-[20px]"} />
             </Link>
           </div>
         </div>
-        <Link href="./CV.pdf" className="hover:underline underline-offset-2">
+        <Link href={link} className="hover:underline underline-offset-2">
           <h2 className="w-full my-2 text-2xl font-bold">{title}</h2>
         </Link>
       </div>
@@ -89,13 +87,14 @@ const Projects = () => {
           <FeaturedProject
             type={"web App"}
             img={project1}
+            link="https://wbs-delivery.onrender.com/"
+            githublink="https://github.com/june9999/Wbs_Delivery"
             description="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
               It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
               local currency."
-            githublink="https://github.com/june9999/Portfolio"
             title="Delivery App"
           />
-          <Project
+          {/* <Project
             type={"web App"}
             img={project1}
             description="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
@@ -112,7 +111,7 @@ const Projects = () => {
               local currency."
             githublink="https://github.com/june9999/Portfolio"
             title="Delivery App"
-          />
+          /> */}
         </div>
       </main>
     </>
