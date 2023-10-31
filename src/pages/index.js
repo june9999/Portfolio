@@ -89,67 +89,70 @@ export default function Home() {
         />
       </Head>
 
-      <main className="flex flex-col justify-center items-center w-full h-auto pb-[5rem]">
-        <div className="p-[3rem] ">
-          <AnimatedText className="" text={"Fueling Passion into Software"} />
+      <main className="flex flex-col justify-center items-center w-full h-auto md:pb-[2rem]">
+        <div className="p-[2rem] ">
+          <AnimatedText
+            className="text-[32px] md:text-6xl"
+            text={"Fueling Passion into Software"}
+          />
         </div>
-        <div className="px-[3rem]">
-          <div className="grid grid-cols-8 w-full p-8">
-            <section className="col-span-3 flex flex-col ">
-              <h1 className="text-dark  uppercase my-[4rem] text-lg  font-bold ">
-                Hi there, Welcome to my personal Portfolio.
+        <div className=" w-full px-[2rem] ">
+          <div className=" flex flex-col mx-auto w-full md:grid md:grid-cols-8  md:p-8">
+            <section className="w-full md:col-span-3 flex flex-col gap-[1rem] items-center ">
+              <h1 className="text-dark  uppercase md:my-[1rem] text-lg  font-bold mx-auto  ">
+                Welcome to My personal Portfolio.
               </h1>
-              <p className="font-medium w-[90%]">
+              <p className="font-sm md:font-medium ">
                 I am Wenjun, a junior software developer.
               </p>
-              <p className="font-medium my-[3rem] w-[90%]">
-                Here, you&aposll find the culmination of my passion for
+              <p className="hidden md:font-medium md:my-[1rem] lg:flex ">
+                Here, you&rsquo;ll find the culmination of my passion for
                 technology, where every application, website, or software
                 solution is a testament to the unwavering dedication that
                 springs from within.
               </p>
-              <p className="font-medium mb-[3rem] w-[90%]">
+              <p className="font-sm text-start md:mb-[1rem] md:font-medium ">
                 If you have any questions, ideas that you are possionate about,
-                or just want to connect, don&apost hesitate to reach out.
-                I&aposm always open to collaboration.
+                or just want to connect, don&rsquo; hesitate to reach out.
+                I&rsquo; always open to collaboration.
               </p>
-            </section>
-            <section className="col-span-3 relative rounded-2xl ">
-              <Image
-                alt="profile"
-                className="p-[1rem] h-auto rounded-2xl"
-                src={profile}
-              />
-            </section>
-            <section className="col-span-2 flex flex-col items-end gap-[2rem] text-dark/75 mt-[5rem] pr-[2rem]">
-              <div className="flex flex-col items-end">
-                <span className="text-6xl font-bold">10+</span>
-                <h2 className="text-xl font-medium capitalize">
-                  Projects completed
-                </h2>
-              </div>
-              <div className="flex flex-col items-end">
-                <span className="text-6xl font-bold">1</span>
-                <h2 className="text-xl font-medium capitalize">
-                  year of experience
-                </h2>
-              </div>
-              <div className="text-light flex flex-col gap-[2rem]  ">
+              <div className="text-light flex gap-[1rem] ">
                 <Link
                   target={"_blank"}
                   href="./CV.pdf"
-                  className="flex p-2.5 px-6 bg-dark/75 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark"
+                  className="flex w-[8rem] p-2.5 px-6 bg-dark/75 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark"
                   download={true}
                 >
-                  Resume <LinkArrow className={"pl-2"} />
+                  Resume <LinkArrow className={"pl-2 w-10"} />
                 </Link>
                 <Link
                   href="mailto:wenjunxue0@gmail.com"
-                  className="flex p-2.5 px-6 bg-dark/75 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark"
+                  className="flex  w-[8rem] p-2.5 px-6 bg-dark/75 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark"
                 >
-                  {" "}
                   Contact
                 </Link>
+              </div>
+            </section>
+            <section className="flex justify-center md:col-span-3">
+              <Image
+                alt="cat"
+                className=" h-auto  sm:max-w-[28rem] md:max-w-full"
+                src={profile}
+              />
+            </section>
+            <section className="col-span-2 flex flex-col items-center md:items-end gap-[2rem] text-dark/75  my-[3rem]">
+              <h1 className="uppercase text-lg font-bold">Overview</h1>
+              <div className="flex flex-col md:items-end md:text-end">
+                <span className="text-4xl lg:text-6xl font-bold">10+</span>
+                <h2 className="text-lg lg:text-xl font-medium capitalize">
+                  Projects completed
+                </h2>
+              </div>
+              <div className="flex flex-col md:items-end md:text-end">
+                <span className="text-4xl lg:text-6xl font-bold">1</span>
+                <h2 className="text-lg lg:text-xl font-medium capitalize">
+                  year of experience
+                </h2>
               </div>
             </section>
           </div>
