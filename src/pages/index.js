@@ -119,7 +119,7 @@ export default function Home() {
               <div className="text-light flex gap-[1rem] ">
                 <Link
                   target={"_blank"}
-                  href="./CV.pdf"
+                  href="./Wenjun_CV.pdf"
                   className="flex w-[8rem] p-2.5 px-6 bg-dark/75 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark"
                   download={true}
                 >
