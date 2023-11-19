@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import project1 from "../../public/images/projects/project1.png";
+import whatapp from "../../public/images/projects/whatapp.png";
 
 const FeaturedProject = ({
   type,
@@ -13,6 +14,7 @@ const FeaturedProject = ({
   img,
   link,
   githublink,
+  TechlogyStack,
 }) => {
   return (
     <article className="flex flex-col w-full md:flex-row mx-auto border-dark border rounded-3xl border-solid shadow-2xl">
@@ -29,12 +31,17 @@ const FeaturedProject = ({
         </span>
         <h2 className="w-full my-2 md:text-4xl font-bold">{title}</h2>
         <p className="mt-2 font-medium text-dark max-h-[10rem] overflow-auto">
-          {description}
+          General description: {description}
+        </p>
+        <p className="mt-2 font-medium text-dark max-h-[10rem] overflow-auto">
+          Technology Stack: {TechlogyStack}
         </p>
         <div className="flex gap-[1rem] pt-[1rem] items-center pb-[1rem]">
-          <Link href={githublink} target="_blank">
-            <GithubIcon className={"w-[50px]"} />
-          </Link>
+          {githublink && (
+            <Link href={githublink} target="_blank">
+              <GithubIcon className={"w-[50px]"} />
+            </Link>
+          )}
           <Link
             href={link}
             target="_blank"
@@ -62,11 +69,13 @@ const Project = ({ type, title, description, img, link, githublink }) => {
         <div className="flex w-full justify-between">
           <span className="font-medium text-xl">{type}</span>
 
-          <div className="flex justify-around items-center">
-            <Link href={githublink} target="_blank">
-              <GithubIcon className={"w-[40px]"} />
-            </Link>
-          </div>
+          {githublink && (
+            <div className="flex justify-around items-center">
+              <Link href={githublink} target="_blank">
+                <GithubIcon className={"w-[40px]"} />
+              </Link>
+            </div>
+          )}
         </div>
         <Link href={link} className="hover:underline underline-offset-2">
           <h2 className="w-full my-2 text-2xl font-bold">{title}</h2>
@@ -90,13 +99,25 @@ const Projects = () => {
             text={"Experience is the best teacher"}
           />
         </div>
-        <div className="flex flex-wrap gap-24 w-[80%]">
+        <div className="flex flex-wrap gap-8 w-[80%]">
           <FeaturedProject
-            type={"web App"}
+            type={"Ongoing Web App"}
+            img={whatapp}
+            link="https://whatsap.whatsap.dpschool.app/"
+            githublink=""
+            description="Digital Product to help Supply chain managers to detect external factors and collect data for forecast model "
+            TechlogyStack="
+             React, Node.js, Express.js, Typerscript. Amazon lambda& serverless services. "
+            title="X-factor"
+          />
+          <FeaturedProject
+            type={"Web App"}
             img={project1}
             link="https://wbs-delivery.onrender.com/"
             githublink="https://github.com/june9999/Wbs_Delivery"
-            description="Our technology stack features React, Node.js, Express.js, MongoDB Atlas, and Mongoose.js on the backend, complemented by Vitel Axios, and more on the frontend. We've seamlessly integrated a React chatbot, Google Maps, and Google Maps Matrix API. Real-time communication is facilitated by Socket.io, ensuring efficient deliveries. Experience RapidCats for a new standard in express delivery services."
+            description="Final project created during Bootcamp, an web app to enable emergency delivery witin city. Continuously update to complete more feature."
+            TechlogyStack="
+             React, Node.js, Express.js, MongoDB Atlas, and Mongoose. We've seamlessly integrated a chatbot, Google Maps, added real-time communication facilitated by Socket.io, ensuring efficient deliveries."
             title="RapidCats"
           />
           {/* <Project

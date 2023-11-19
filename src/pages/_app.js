@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main
-        className={`${inter.variable} font-sans w-full h-[full] bg-light text-black`}
+        className={`${inter.variable} relative h-[100%] pb-[2rem] font-sans w-full  bg-light text-black`}
       >
         <Navbar />
         <Component {...pageProps} />
