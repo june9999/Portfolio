@@ -26,7 +26,7 @@ const FeaturedProject = ({
         <Image className="rounded-lg" src={img} alt={title} />
       </Link>
       <div className="flex w-full md:w-1/2 flex-col items-start justify-center px-6 text-primary">
-        <span className="md:font-medium md:text-xl md:mb-10 capitalize">
+        <span className="md:font-medium md:text-xl md:my-4 capitalize ">
           {type}
         </span>
         <h2 className="w-full my-2 md:text-4xl font-bold">{title}</h2>
@@ -99,7 +99,7 @@ const Projects = () => {
             text={"Experience is the best teacher"}
           />
         </div>
-        <div className="flex flex-wrap gap-8 w-[80%]">
+        <div className="flex flex-wrap mb-8 gap-8 w-[80%]">
           <FeaturedProject
             type={"Ongoing Web App"}
             img={whatapp}
